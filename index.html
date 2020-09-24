@@ -102,26 +102,23 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header header-size-custom" data-sticky-shrink="false">
+		<header id="header" class="full-header sticky-header header-size-custom" data-sticky-shrink="false">
 			<div id="header-wrap">
 				<div class="container-fluid">
 					<div class="header-row top-search-parent">
-
-						<!-- Logo
-						============================================= -->
+						<!-- Logo -->
 						<div id="logo">
 							<a href="index.html" class="standard-logo"><img src="demos/car/images/kutai_logo.png" alt="Canvas Logo"></a>
 							<a href="index.html" class="retina-logo"><img src="demos/car/images/kutai_logo@2x.png" alt="Canvas Logo"></a>
-						</div><!-- #logo end -->
+						</div>
+						<!-- #logo end -->
 
 						<div class="header-misc">
-							<!-- Top Search
-							============================================= -->
+							<!-- Top Search -->
 							<div id="top-search" class="header-misc-icon">
 								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
 							</div><!-- #top-search end -->
 
-					
 							<div class="dropdown">
 								<a class="btn" data-toggle="dropdown"><i class="icon-world"></i></a>
 								<div class="dropdown-menu dropdown-menu-tip-nw">
@@ -146,9 +143,15 @@
 						============================================= -->
 						<nav class="primary-menu with-arrows on-click mr-lg-0 ml-lg-auto">
 							<ul class="menu-container">
-								<li class="menu-item"><a class="menu-link" href="demo-car.html"><div>Home</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#"><div>About us</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#"><div>News</div></a></li>
+								<li class="menu-item sub-menu" style="padding-top: 19px; padding-bottom: 19px;">
+									<a class="menu-link" href="#" ><div>About Us<i class="icon-angle-down"></i></div></a>
+									<ul class="sub-menu-container">
+										<li class="menu-item">
+											<a class="menu-link" href="intro.html#section-niche"><div>News</div></a>
+										</li>
+										<button class="sub-menu-trigger icon-chevron-right"></button></li>
+									</ul>
+								</li>
 								<!-- Mega Menu -->
 								<li class="menu-item mega-menu"><a class="menu-link" style="cursor: pointer;"><div>Products</div></a>
 									<div class="mega-menu-content mega-menu-style-2 pl-lg-0">
@@ -563,7 +566,7 @@
 								<li class="menu-item"><a class="menu-link" href="#"><div>Downloads</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#"><div>Knowledge</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#"><div>Test Report</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#"><div>Contacts</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Contact Us</div></a></li>
 							</ul>
 						</nav><!-- #primary-menu end -->
 						<form class="top-search-form" action="search.html" method="get" style="width: 2483.33px;">
@@ -944,84 +947,86 @@
 		============================================= -->
 		<section id="content" class="clearfix" style="background-color: #d6d0d0;">
 
+				
+			
 				<!-- Masonry Thums
 				============================================= -->
 				<div class="row m-0 dark" data-height-xs="500" data-height-sm="500" data-height-md="500" data-height-lg="500" data-height-xl="500">
-					<a href="demo-car-listing.html" class="col-xl-6 col-md-12 col-sm-12 image_fade border-right">
-						<div class="bg-overlay">
-							<img src="demos/car/images/categories/1.png" class="category-button focus">
-							<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
-								<div class="portfolio-desc py-0">
-									<h3>Generator Automatic Voltage Regulators (AVR)</h3>
+						<a href="demo-car-listing.html" class="col-xl-6 col-md-12 col-sm-12 image_fade border-right focus">
+							<div class="bg-overlay">
+								<img src="demos/car/images/categories/1.png" class="category-button">
+								<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
+									<div class="portfolio-desc py-0">
+										<h3>Generator Automatic Voltage Regulators (AVR)</h3>
+									</div>
 								</div>
 							</div>
-						</div>
-					</a>
-					<a href="demo-car-listing.html" class="col-xl-6 col-md-12 col-sm-12 image_fade border-right">
-						<div class="bg-overlay">
-							<img src="demos/car/images/categories/2.png" class="category-button focus">
-							<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
-								<div class="portfolio-desc py-0">
-									<h3>Automatic Transfer Switches</h3>
+						</a>
+						<a href="demo-car-listing.html" class="col-xl-6 col-md-12 col-sm-12 image_fade border-right focus">
+							<div class="bg-overlay">
+								<img src="demos/car/images/categories/2.png" class="category-button">
+								<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
+									<div class="portfolio-desc py-0">
+										<h3>Automatic Transfer Switches</h3>
+									</div>
 								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="row m-0 dark" data-height-xs="500" data-height-sm="500" data-height-md="500" data-height-lg="500" data-height-xl="500">
-					<a href="demo-car-listing.html" class="col-xl-6 col-md-12 col-sm-12 image_fade border-right">
-						<div class="bg-overlay">
-							<img src="demos/car/images/categories/3.png" class="category-button focus">
-							<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
-								<div class="portfolio-desc py-0">
-									<h3>Automatic Battery Chargers</h3>
+						</a>
+					</div>
+					<div class="row m-0 dark" data-height-xs="500" data-height-sm="500" data-height-md="500" data-height-lg="500" data-height-xl="500">
+						<a href="demo-car-listing.html" class="col-xl-6 col-md-12 col-sm-12 image_fade border-right focus">
+							<div class="bg-overlay">
+								<img src="demos/car/images/categories/3.png" class="category-button">
+								<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
+									<div class="portfolio-desc py-0">
+										<h3>Automatic Battery Chargers</h3>
+									</div>
 								</div>
 							</div>
-						</div>
-					</a>
-					<a href="demo-car-listing.html" class="col-xl-6 col-md-12 col-sm-12 image_fade p-0 border-right">
-						<div class="bg-overlay">
-							<img src="demos/car/images/categories/4.png" class="category-button focus">
-							<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
-								<div class="portfolio-desc py-0">
-									<h3>Genset Controller and Automatic Mains Failure</h3>
+						</a>
+						<a href="demo-car-listing.html" class="col-xl-6 col-md-12 col-sm-12 image_fade p-0 border-right focus">
+							<div class="bg-overlay">
+								<img src="demos/car/images/categories/4.png" class="category-button">
+								<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
+									<div class="portfolio-desc py-0">
+										<h3>Genset Controller and Automatic Mains Failure</h3>
+									</div>
 								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="row m-0 dark" data-height-xs="750" data-height-sm="750" data-height-md="750" data-height-lg="500" data-height-xl="500">
-					<a href="demo-car-listing.html" class="col-xl-4 col-md-12 col-sm-12 image_fade p-0 border-right">
-						<div class="bg-overlay">
-							<img src="demos/car/images/categories/5.png" class="category-button-small focus">
-							<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
-								<div class="portfolio-desc py-0">
-									<h3>Remote Monitoring, Control and Annunciator System</h3>
+						</a>
+					</div>
+					<div class="row m-0 dark" data-height-xs="750" data-height-sm="750" data-height-md="750" data-height-lg="500" data-height-xl="500">
+						<a href="demo-car-listing.html" class="col-xl-4 col-md-12 col-sm-12 image_fade p-0 border-right focus">
+							<div class="bg-overlay">
+								<img src="demos/car/images/categories/5.png" class="category-button-small">
+								<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
+									<div class="portfolio-desc py-0">
+										<h3>Remote Monitoring, Control and Annunciator System</h3>
+									</div>
 								</div>
 							</div>
-						</div>
-					</a>
-					<a href="demo-car-listing.html" class="col-xl-4 col-md-12 col-sm-12 image_fade p-0 border-right">
-						<div class="bg-overlay">
-							<img src="demos/car/images/categories/6.png" class="category-button-small focus">
-							<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
-								<div class="portfolio-desc py-0">
-									<h3>Electronic Governor Controllers</h3>
+						</a>
+						<a href="demo-car-listing.html" class="col-xl-4 col-md-12 col-sm-12 image_fade p-0 border-right focus">
+							<div class="bg-overlay">
+								<img src="demos/car/images/categories/6.png" class="category-button-small">
+								<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
+									<div class="portfolio-desc py-0">
+										<h3>Electronic Governor Controllers</h3>
+									</div>
 								</div>
 							</div>
-						</div>
-					</a>
-					<a href="demo-car-listing.html" class="col-xl-4 col-md-12 col-sm-12 image_fade p-0 border-right">
-						<div class="bg-overlay">
-							<img src="demos/car/images/categories/7.png"  class="category-button-small focus">
-							<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
-								<div class="portfolio-desc py-0">
-									<h3>Other Generator Set Parts</h3>
+						</a>
+						<a href="demo-car-listing.html" class="col-xl-4 col-md-12 col-sm-12 image_fade p-0 border-right focus">
+							<div class="bg-overlay">
+								<img src="demos/car/images/categories/7.png"  class="category-button-small">
+								<div class="bg-overlay-content text-overlay-mask dark align-items-center justify-content-start">
+									<div class="portfolio-desc py-0">
+										<h3>Other Generator Set Parts</h3>
+									</div>
 								</div>
 							</div>
-						</div>
-					</a>
-				</div>
+						</a>
+					</div>
             <!-- Featured Section
 				============================================= -->
 				<div class="section m-0 clearfix" style="background: #FFF url('demos/car/images/features/test-report.png') center bottom no-repeat; background-size: cover; padding-top: 240px;">
