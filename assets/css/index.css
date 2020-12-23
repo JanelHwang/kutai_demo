@@ -1,0 +1,348 @@
+/* index->genoncall-app*/
+.genoncall {
+  font-family: 'Open Sans','Microsoft JhengHei',sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  color: #fff;
+}
+
+.genoncall-body {
+  z-index: 2;
+  position: relative;
+  margin-top: -100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.genoncall img {
+  display: block;
+  margin: 160px auto 0 auto;
+  z-index: 0;
+}
+
+.genoncall .title {
+  font-size: calc(91px + (100 - 91) * ((100vw - 360px) / (1440 - 360)));
+  font-weight: 600;
+}
+
+.genoncall .subtitle {
+  font-size: calc(30px + (35 - 30) * ((100vw - 360px) / (1440 - 360)));
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin-bottom: -30px;
+}
+
+.genoncall .content {
+  font-size: calc(26px + (28 - 26) * ((100vw - 360px) / (1440 - 360)));
+  color: #9f9e9f;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin-top: -30px;
+}
+
+@media (max-width: 850px) {
+  .genoncall .title {
+    line-height: 1.2;
+  }
+  .genoncall .subtitle {
+    margin-bottom: -15px;
+  }
+  .genoncall .content {
+    margin-top: 0px;
+  }
+  .genoncall img {
+    margin-top: 80px;
+  }
+  .genoncall-body {
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .genoncall .title {
+    font-size: 48px;
+  }
+  .genoncall .subtitle {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .genoncall .content {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  .genoncall-body {
+    margin-top: -20px;
+  }
+  .genoncall .btn {
+    font-size: 16px;
+  }
+}
+
+/* index->product */
+.category-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c1c1c), to(#181818));
+  background: linear-gradient(to bottom, #1c1c1c 0%, #181818 100%);
+  background: -webkit-linear-gradient(top, #1c1c1c 0%, #181818 100%);
+}
+
+.category-card img {
+  width: 80%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.category-card .card-body {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 1601px) {
+  .category-card {
+    height: 500px;
+  }
+  .category-card .card-body {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 1600px) {
+  .category-card {
+    height: 420px;
+  }
+  .category-card img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 762px) {
+  .category-card {
+    height: 380px;
+  }
+  .category-card .card-body {
+    margin-bottom: 1.5rem;
+    width: 85%;
+  }
+  .category-card img {
+    width: 100%;
+  }
+}
+
+/* index->news */
+.news-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(28, 28, 28, 0.85);
+}
+
+.news-card img {
+  width: 90%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.news-card .card-head {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 1.5rem;
+}
+
+.news-card .card-head .card-title {
+  width: 100%;
+  color: #fff;
+  font-size: calc(30px + (35 - 30) * ((100vw - 360px) / (1440 - 360)));
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.news-card .card-head .card-subtitle {
+  width: 100%;
+  letter-spacing: 3.5px;
+  font-weight: 300;
+  font-size: calc(26px + (28 - 26) * ((100vw - 360px) / (1440 - 360)));
+}
+
+.news-card .card-body {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25em;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 0 0 5px 5px;
+}
+
+.news-card.new-pd .card-body {
+  width: 100%;
+  height: 100;
+  display: block;
+  background-color: #B8292D;
+}
+
+.news-card.dc-pd img {
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+}
+
+@media (max-width: 2000px) {
+  .news-card .card-body {
+    width: 235px;
+    height: 77px;
+    display: -webkit-box;
+    white-space: nowrap;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 1600px) {
+  .news-card .card-body {
+    width: 235px;
+    height: 75px;
+    display: -webkit-box;
+    white-space: nowrap;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .news-card.dc-pd::after {
+    font-size: 1.55em;
+  }
+  .news-card .card-head .card-title {
+    font-size: 1.5em;
+  }
+  .news-card .card-head .card-subtitle {
+    font-size: 1.05em;
+  }
+}
+
+@media (max-width: 762px) {
+  .news-card .card-head .card-title {
+    font-size: 1.25em;
+  }
+  .news-card .card-head .card-subtitle {
+    font-size: 0.85em;
+  }
+}
+
+/*overlay*/
+.bg-overlay-content {
+  padding: 0 1rem;
+}
+
+.bg-overlay-content p {
+  font-size: calc(18px + (20 - 18) * ((100vw - 360px) / (1440 - 360)));
+  color: #c0c0c0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  font-weight: 400;
+  -webkit-box-orient: vertical;
+}
+
+.overlay-title {
+  font-size: calc(30px + (32 - 30) * ((100vw - 360px) / (1440 - 360)));
+  padding: 0.5rem 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #e9e9e9;
+}
+
+.overlay-btn {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1600px) {
+  .bg-overlay-content p {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -156,10 +156,10 @@ body {
 
 a {
 	text-decoration: none !important;
-	color: #1ABC9C;
+	color: #B8292D;
 }
 
-a:hover { color: #222; }
+a:hover { color: #B8292D; }
 
 a img { border: none; }
 
@@ -2935,7 +2935,7 @@ html[xmlns] .slider-wrap {
 		z-index: 299;
 	}
 
-	#header.transparent-header.semi-transparent #header-wrap { background-color: rgba(255,255,255,0.8); }
+	#header.transparent-header.semi-transparent #header-wrap { background-color: rgba(255,255,255,0.7); }
 
 	#header.transparent-header.floating-header { margin-top: 60px; }
 
@@ -3156,13 +3156,6 @@ html[xmlns] .slider-wrap {
 
 @media (min-width: 992px) {
 
-	.full-header #logo {
-		padding-right: 30px;
-		border-right: 1px solid #EEE;
-	}
-
-	#header.transparent-header.full-header #logo { border-right-color: rgba(0,0,0,0.1); }
-
 	.sticky-header-shrink #header-wrap #logo img {
 		height: 60px;
 	}
@@ -3336,7 +3329,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	line-height: 22px;
 	padding: 14px 5px;
 	color: #444;
-	font-size: 0.8em;
+	font-size: 0.85em;
 	letter-spacing: 1px;
 	font-family: 'Open Sans', 'Microsoft JhengHei', sans-serif;
 }
@@ -3558,10 +3551,10 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 	.full-header .primary-menu .menu-container {
 		padding-right: 0.5rem;
 		margin-right: 0.5rem;
-		border-right: 1px solid #EEE;
+		/* border-right: 1px solid #EEE; */
 	}
 
-	.transparent-header.full-header .primary-menu .menu-container { border-right-color: rgba(0,0,0,0.1); }
+	/* .transparent-header.full-header .primary-menu .menu-container { border-right-color: rgba(0,0,0,0.1); } */
 
 	.mega-menu { position: inherit; }
 
@@ -5326,8 +5319,6 @@ body:not(.top-search-open) .top-search-parent .header-misc > *:not(#top-search) 
 /* ----------------------------------------------------------------
 	Slider
 -----------------------------------------------------------------*/
-
-
 .slider-element {
 	position: relative;
 	width: 100%;
@@ -10704,7 +10695,7 @@ body:not(.device-touch) .social-icon i {
 
 .accordion-header {
 	padding: 0.75rem 0;
-	border-top: 1px dotted #DDD;
+	/* border-top: 1px dotted #DDD; */
 	cursor: pointer;
 }
 
@@ -10755,7 +10746,7 @@ body:not(.device-touch) .social-icon i {
 }
 
 .accordion-border .accordion-content {
-	padding: 0 1.125rem 1.5rem;
+	padding: 0.125rem 2rem;
 }
 
 
