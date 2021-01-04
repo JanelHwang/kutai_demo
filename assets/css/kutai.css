@@ -1,3 +1,39 @@
+#logo {
+  margin-right: 0 !important;
+}
+
+@media (min-width: 1440px) {
+  #header-wrap .container-fluid {
+    padding-right: 90px;
+    padding-left: 118px;
+  }
+  .full-header #logo {
+    padding-right: 68px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .full-header #logo {
+    padding-right: 0px;
+  }
+  .header-misc a.btn {
+    margin-left: 8px;
+  }
+  #primary-menu-trigger, #page-menu-trigger {
+    width: auto;
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .full-header #logo {
+    padding-right: 30px;
+  }
+  .menu-link {
+    padding: 19px 12px;
+  }
+}
+
 .underline {
   position: relative;
   display: inline-block;
@@ -15,22 +51,30 @@
   bottom: 0;
 }
 
+.header-misc .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .section-title {
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   color: #e8eaed;
-  font-size: calc(56px + (58 - 56) * ((100vw - 360px) / (1440 - 360)));
+  letter-spacing: 1px;
+  font-size: calc(48px + (66 - 48) * ((100vw - 360px) / (1440 - 360)));
 }
 
 .card-button {
   display: inline-block;
   text-align: center;
   min-width: 180px;
-  padding: 8px 16px 8px 24px;
-  font-size: calc(24px + (28 - 24) * ((100vw - 360px) / (1440 - 360)));
+  line-height: 1.8;
+  padding: 0 8px 2px 16px;
+  font-size: calc(22px + (24 - 22) * ((100vw - 360px) / (1440 - 360)));
   font-weight: 300;
   border-radius: 15px;
   letter-spacing: 1px;
+  color: #FFF;
   cursor: pointer;
   background-color: #B8292D;
 }
@@ -45,10 +89,10 @@
   display: inline-block;
   text-align: center;
   min-width: 120px;
-  padding: 8px 16px 8px 24px;
+  padding: 8px;
   font-size: calc(16px + (20 - 16) * ((100vw - 360px) / (1440 - 360)));
-  font-weight: 300;
-  border-radius: 15px;
+  font-weight: 400;
+  border-radius: 8px;
   letter-spacing: 1px;
   cursor: pointer;
   color: #EEE;

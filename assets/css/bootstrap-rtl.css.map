@@ -4,8 +4,6 @@
     "sources": [
         "../../css/sass/bootstrap-rtl/bootstrap-rtl.scss",
         "../../css/sass/_variables.scss",
-        "../../css/sass/bootstrap/_functions.scss",
-        "../../css/sass/bootstrap/_variables.scss",
         "../../css/sass/bootstrap/_mixins.scss",
         "../../css/sass/bootstrap/vendor/_rfs.scss",
         "../../css/sass/bootstrap/mixins/_deprecate.scss",
@@ -39,6 +37,8 @@
         "../../css/sass/bootstrap/mixins/_grid-framework.scss",
         "../../css/sass/bootstrap/mixins/_grid.scss",
         "../../css/sass/bootstrap/mixins/_float.scss",
+        "../../css/sass/bootstrap/_functions.scss",
+        "../../css/sass/bootstrap/_variables.scss",
         "../../css/sass/bootstrap-rtl/mixins/_reset-text-rtl.scss",
         "../../css/sass/bootstrap-rtl/mixins/_pagination-rtl.scss",
         "../../css/sass/bootstrap-rtl/mixins/_lists-rtl.scss",

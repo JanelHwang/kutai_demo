@@ -1,6 +1,5 @@
-/* index->genoncall-app*/
 .genoncall {
-  font-family: 'Open Sans','Microsoft JhengHei',sans-serif;
+  font-family: 'Open Sans', 'Microsoft JhengHei', sans-serif;
   width: 100%;
   min-height: 100vh;
   padding-top: 2rem;
@@ -21,45 +20,36 @@
   color: #fff;
 }
 
-.genoncall-body {
-  z-index: 2;
-  position: relative;
-  margin-top: -100px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 .genoncall img {
   display: block;
-  margin: 160px auto 0 auto;
+  margin: 100px auto 0 auto;
   z-index: 0;
 }
 
 .genoncall .title {
-  font-size: calc(91px + (100 - 91) * ((100vw - 360px) / (1440 - 360)));
-  font-weight: 600;
+  font-size: calc(48px + (66 - 48) * ((100vw - 360px) / (1440 - 360)));
+  font-weight: 500;
+  color: #FFF;
+  line-height: 1.8;
 }
 
 .genoncall .subtitle {
-  font-size: calc(30px + (35 - 30) * ((100vw - 360px) / (1440 - 360)));
+  font-size: calc(24px + (30 - 24) * ((100vw - 360px) / (1440 - 360)));
   letter-spacing: 5px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: -30px;
+  color: #FFF;
 }
 
 .genoncall .content {
-  font-size: calc(26px + (28 - 26) * ((100vw - 360px) / (1440 - 360)));
+  font-size: calc(20px + (22 - 20) * ((100vw - 360px) / (1440 - 360)));
   color: #9f9e9f;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: 400;
-  margin-top: -30px;
+  margin-top: -15px;
 }
 
 @media (max-width: 850px) {
-  .genoncall .title {
-    line-height: 1.2;
-  }
   .genoncall .subtitle {
     margin-bottom: -15px;
   }
@@ -69,8 +59,20 @@
   .genoncall img {
     margin-top: 80px;
   }
-  .genoncall-body {
-    margin-top: -15px;
+  .genoncall .genoncall-body {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .genoncall .title {
+    margin-top: 10px;
+  }
+  .genoncall .subtitle {
+    margin-top: 20px;
+  }
+  .genoncall img {
+    padding-top: 40px;
   }
 }
 
@@ -86,12 +88,21 @@
     font-size: 16px;
     margin-top: 0px;
   }
-  .genoncall-body {
-    margin-top: -20px;
-  }
   .genoncall .btn {
     font-size: 16px;
   }
+  .genoncall .genoncall-body {
+    margin-top: -20px;
+  }
+}
+
+.genoncall-body {
+  z-index: 2;
+  position: relative;
+  margin-top: -100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* index->product */
@@ -110,7 +121,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 95%;
+  width: 98%;
   cursor: pointer;
   background: -webkit-gradient(linear, left top, left bottom, from(#1c1c1c), to(#181818));
   background: linear-gradient(to bottom, #1c1c1c 0%, #181818 100%);
@@ -118,9 +129,9 @@
 }
 
 .category-card img {
-  width: 80%;
+  width: 100%;
   height: auto;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .card-body {
@@ -128,7 +139,7 @@
 }
 
 .category-card .card-body {
-  width: 75%;
+  width: 91%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,14 +151,15 @@
           justify-content: center;
   font-size: 1em;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 2.2px;
   font-weight: 600;
   padding-bottom: 1rem;
+  overflow: hidden;
 }
 
 @media (min-width: 1601px) {
-  .category-card {
-    height: 500px;
+  .category-card img {
+    width: 105%;
   }
   .category-card .card-body {
     font-size: 1.3em;
@@ -157,9 +169,6 @@
 @media (max-width: 1600px) {
   .category-card {
     height: 420px;
-  }
-  .category-card img {
-    width: 100%;
   }
 }
 
@@ -226,16 +235,18 @@
 .news-card .card-head .card-title {
   width: 100%;
   color: #fff;
-  font-size: calc(30px + (35 - 30) * ((100vw - 360px) / (1440 - 360)));
+  font-size: 42px;
   letter-spacing: 3px;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .news-card .card-head .card-subtitle {
   width: 100%;
-  letter-spacing: 3.5px;
+  letter-spacing: 2px;
   font-weight: 300;
-  font-size: calc(26px + (28 - 26) * ((100vw - 360px) / (1440 - 360)));
+  font-size: 22px;
+  line-height: 1;
 }
 
 .news-card .card-body {
@@ -249,7 +260,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.25em;
+  font-size: calc(18px + (24 - 18) * ((100vw - 360px) / (1440 - 360)));
   letter-spacing: 2px;
   font-weight: 500;
   text-transform: uppercase;
@@ -259,19 +270,19 @@
 
 .news-card.new-pd .card-body {
   width: 100%;
-  height: 100;
+  height: 100%;
   display: block;
   background-color: #B8292D;
 }
 
 .news-card.dc-pd img {
-  -webkit-filter: brightness(0.5);
-  filter: brightness(0.5);
+  -webkit-filter: brightness(0.35);
+  filter: brightness(0.35);
 }
 
 @media (max-width: 2000px) {
   .news-card .card-body {
-    width: 235px;
+    width: 100%;
     height: 77px;
     display: -webkit-box;
     white-space: nowrap;
@@ -283,13 +294,7 @@
 
 @media (max-width: 1600px) {
   .news-card .card-body {
-    width: 235px;
-    height: 75px;
-    display: -webkit-box;
-    white-space: nowrap;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 218px;
   }
   .news-card.dc-pd::after {
     font-size: 1.55em;
@@ -302,12 +307,28 @@
   }
 }
 
-@media (max-width: 762px) {
+@media (max-width: 1400px) {
+  .news-card .card-body {
+    width: 210px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .news-card .card-body {
+    width: 205px;
+  }
   .news-card .card-head .card-title {
     font-size: 1.25em;
   }
   .news-card .card-head .card-subtitle {
     font-size: 0.85em;
+  }
+}
+
+@media (max-width: 992px) {
+  .news-card .card-body {
+    width: 178px;
+    font-size: 18px;
   }
 }
 
@@ -317,7 +338,7 @@
 }
 
 .bg-overlay-content p {
-  font-size: calc(18px + (20 - 18) * ((100vw - 360px) / (1440 - 360)));
+  font-size: calc(22px + (24 - 22) * ((100vw - 360px) / (1440 - 360)));
   color: #c0c0c0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -328,7 +349,7 @@
 }
 
 .overlay-title {
-  font-size: calc(30px + (32 - 30) * ((100vw - 360px) / (1440 - 360)));
+  font-size: 1.3em;
   padding: 0.5rem 0;
   font-weight: 500;
   letter-spacing: 2px;
@@ -341,7 +362,7 @@
 }
 
 @media (max-width: 1600px) {
-  .bg-overlay-content p {
+  .bg-overlay-content .overlay-title {
     display: none;
   }
 }

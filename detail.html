@@ -13,7 +13,7 @@
 	<!-- car Specific Stylesheet -->
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/app.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/dark.css" type="text/css" />
 	<!-- <link rel="stylesheet" href="css/car.css" type="text/css" /> -->
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
@@ -23,8 +23,10 @@
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 
 	<link rel="stylesheet" href="assets/css/kutai.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/index.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/products.css" type="text/css" />
 	<!-- <link rel="stylesheet" href="css/revision.css" type="text/css" /> -->
+
 	<!-- mega menu reDesign -->
 	<link rel="stylesheet" href="css/mega-menu.css" type="text/css" />
 
@@ -96,13 +98,14 @@
 
 <body class="stretched">
 
+	
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header sticky-header sticky-header-shrink dark" data-mobile-sticky="true" >
+		<header id="header" class="full-header sticky-header header-size-sm dark" data-mobile-sticky="true" data-sticky-shrink="false">
 			<div id="header-wrap">
 				<div class="container-fluid">
 					<div class="header-row top-search-parent">
@@ -110,12 +113,12 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="index.html" class="standard-logo" style="height: 50px;"><img src="images/logo-dark.svg" alt="Canvas Logo"></a>
-							<a href="index.html" class="retina-logo" style="height: 30px;"><img src="images/logo-dark.svg" alt="Canvas Logo"></a>
+							<a href="index.html" class="standard-logo"><img src="images/logo-dark.svg" alt="Canvas Logo" style="height: 39px;"></a>
+							<a href="index.html" class="retina-logo"><img src="images/logo-dark.svg" alt="Canvas Logo" style="height: 30px;"></a>
 						</div><!-- #logo end -->
 
-						<div class="header-misc ml-0 my-2">
-							<a href="#" class="btn d-none d-md-none d-lg-block"><i class="icon-user1"></i></a>
+						<div class="header-misc ml-auto my-2">
+							<a href="#" class="dark btn d-none d-md-none d-lg-block"><i class="icon-user4"></i></a>
 
 							<div class="dropdown">
 								<a class="btn" data-toggle="dropdown"><i class="icon-world"></i></a>
@@ -130,7 +133,7 @@
 							<!-- Top Search
 							============================================= -->
 							<div id="top-search" class="header-misc-icon">
-								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
+								<a href="#" id="top-search-trigger" class="btn"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
 							</div><!-- #top-search end -->
 
 							<div id="primary-menu-trigger">
@@ -140,7 +143,7 @@
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu with-arrows on-click mr-lg-0 ml-lg-auto navbar-no-bg">
+						<nav class="primary-menu with-arrows on-click navbar-no-bg">
 							<ul class="menu-container">
 								<li class="menu-item sub-menu">
 									<a class="menu-link" href="#"><div>About</div></a>
@@ -157,7 +160,7 @@
 											<div class="row">
 												<!-- Mega Menu Nav Link
 												============================================= -->
-												<ul class="sub-menu-container mega-menu-column col-lg-3 p-lg-0">
+												<ul class="sub-menu-container mega-menu-column col-lg-4 p-lg-0">
 													<li class="menu-item">
 														<div class="widget">
 															<div class="list-group list-group-flush" id="side-tabs" role="tablist" aria-orientation="vertical">
@@ -192,7 +195,7 @@
 
 												<!-- Mega Menu Nav Content
 												============================================= -->
-												<ul class="sub-menu-container mega-menu-column col-lg-3 p-lg-0"  >
+												<ul class="sub-menu-container mega-menu-column col-lg-3 p-lg-0">
 													<li class="menu-item">
 														<div class="widget">
 															<!-- generator-automatic-voltage-regulator / types -->
@@ -317,7 +320,7 @@
 														</div>
 													</li>
 												</ul>
-												<ul class="sub-menu-container mega-menu-column col-lg-3 p-lg-0">
+												<ul class="sub-menu-container mega-menu-column col-lg-5 p-lg-0">
 													<li class="menu-item">
 														<div class="widget">
 															<div class="tab-content">
@@ -564,7 +567,7 @@
 								<li class="menu-item"><a class="menu-link" href="#"><div>Downloads</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#"><div>Knowledge</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#"><div>Test Report</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#"><div>Contact Us</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Support</div></a></li>
 								<li class="menu-item d-lg-none"><a class="menu-link" href="#"><div><i class="icon-user1 pr-2"></i>Login</div></a></li>
 							</ul>
 						</nav><!-- #primary-menu end -->
@@ -576,7 +579,7 @@
 			</div>
 			<div class="header-wrap-clone"></div>
         </header>
-        <!-- #header end -->
+		<!-- #header end -->
 	
 
 		<!-- Slider
@@ -596,7 +599,7 @@
 						<div class="slider-caption slider-caption-center topmargin-lg">
 							<img src="demos/car/images/products/advr-054/advr-054.png" width="80%;" class="mx-auto animated zoomIn">
 						</div> -->
-						<div class="swiper-slide-bg" style="background: url('images/header/header.png') #000 no-repeat center center / cover;"></div>
+						<div class="swiper-slide-bg" style="background: url('images/header/header.png') #000 no-repeat center center; background-size: contain;"></div>
 						<!-- <div class="slider-caption slider-caption-center">
 							<img src="images/products/advr-054/advr-054.png" width="80%;" class="mx-auto animated zoomIn">
 						</div>
@@ -605,13 +608,18 @@
 						</div>  -->
 						<div class="product-header">
 							<div class="row mx-auto">
-								<div class="col-md-12 mx-auto">
-									<img src="images/products/advr-054/advr-054.png" alt="genoncall-app" class="img-fluid">
+								<div class="col-md-6  col-11 mx-auto">
+									<img src="images/products/advr-054-400hz/advr-054-400hz.png" alt="genoncall-app" class="img-fluid">
 								</div>
 								<div class="col-md-12">
 									<div class="header-body">
 										<div class="title">ADVR-054-400HZ</div>
-										<div class="card-button btn-inquiry mt-4">Product Inquiry<i class="icon-line-chevrons-right pl-2"></i></div>
+										<div class="card-button-sm mt-4">Product Inquiry
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+												<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+												<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+											</svg>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -645,293 +653,283 @@
 		<section id="content" style="background: linear-gradient(to bottom, #040000 10%,#343434 100%);">
 			<div class="content-wrap pt-5">
 				<div class="container">
-
 					<div class="row">
 						<!-- Posts -->
 						<div class="col-md-12">
 							<!-- Page Section - features
 							============================================= -->
 							<div>
-								<h2 style="color:#e8eaed; font-size: calc(28px + (32 - 28) * ((100vw - 360px) / (1440 - 360)));">Intermediate Frequency 400Hz Self Excited 5 Amp Digital Automatic Voltage Regulator for Military spec and Aviation generator</h2>
+								<h2 style="color:#e8eaed; font-size: calc(28px + (32 - 28) * ((100vw - 360px) / (1440 - 360)));">Intermediate Frequency 400Hz Self Excited 5 Amp Digital Automatic Voltage Regulatorfor Military spec and Aviation generator</h2>
 								<p style="color:#e8eaed; font-size: calc(20px + (24 - 20) * ((100vw - 360px) / (1440 - 360)));">ADVR-054-400HZ is a 5 Amp self excited 400Hz Generator Automatic Voltage Regulator designed to replace most military and aviation 400Hz generator. It has large heat sink which significantly increases cooling efficiency. This AVR has over excitation protection and it can automatically shut-off output when voltage sensing is lost.</p>
 							</div>
+						</div>
+					</div>
+					<!-- Page Section - features
+					============================================= -->
 
-							<!-- Page Section - features
-							============================================= -->
+					<div class="accordion">
+						<div class="accordion-header page-section accordion-active">
+							<div class="accordion-icon">
+								<i class="accordion-closed icon-line-plus"></i>
+								<i class="accordion-open icon-line-minus"></i>
+							</div>
+							<div class="accordion-title">Features</div>
+						</div>
+						<div class="accordion-content" style="display: none;">
+							<ul>
+								<li>Compact size, robust and high reliability</li>
+								<li>Innovative heat sink significantly increases cooling efficiency</li>
+								<li>220/380/440/480 Vac selectable input</li>
+								<li>Soft start voltage ramping</li>
+								<li>Over excitation protection</li>
+								<li>Digital low frequency protection circuit, prevents thermal drift</li>
+								<li>EMI suppression</li>
+								<li>Automatic shut off output when voltage sensing is lost</li>
+								<li>Built-in high capacity fuse</li>
+								<li>Use with KUTAI <a href="ep200.html">EP200</a> Paralleling Module for parallel operation</li>
+							</ul>
+						</div>
 
-							<div class="accordion mb-5 clearfix">
-								<div class="accordion-header page-section accordion-active">
-									<div class="accordion-icon">
-										<i class="accordion-closed icon-line-plus"></i>
-										<i class="accordion-open icon-line-minus"></i>
-									</div>
-									<div class="accordion-title">Features</div>
+						<div class="accordion-header page-section">
+							<div class="accordion-icon">
+								<i class="accordion-closed icon-line-plus"></i>
+								<i class="accordion-open icon-line-minus"></i>
+							</div>
+							<div class="accordion-title">Specifications</div>
+						</div>
+						<div class="accordion-content" style="display: none;">
+							<div class="row">
+								<div class="col-lg-12 mt-3">
+									<table class="table css-table">
+										<thead>
+											<tr>
+												<th scope="col" colspan="2"><h4>Specifications</h4></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td scope="row">Sensing Input<br>(Average Reading)</td>
+												<td>
+													<ul>
+														<li>Voltage 170 to 260 Vac @ 220 Vac 1 phase 2 wire</li>
+														<li>Voltage 340 to 520 Vac @ 440 Vac 1 phase 2 wire 220/440 Vac (DIP switch setting)</li>
+														<li>Frequency 320 to 420 Hz</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Power Input</td>
+												<td>
+													<ul>
+														<li>Voltage 100 to 300 Vac 1 phase 2 wire</li>
+														<li>Frequency 250 to 420 Hz</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Excitation Output</td>
+												<td>
+													<ul>
+														<li>220 Vac 1 phase continuous 63 Vdc 5A Max. 90 Vdc 7A for 10 seconds</li>
+														<li>Resistance Min. 15 ohms Max. 100 ohms</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">External Voltage Adjustment</td>
+												<td>
+													<ul>
+														<li>Max +/-3.5% @ 1K ohm 1 watt potentiometer</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Voltage Regulation</td>
+												<td>
+													<ul>
+														<li>Less than +/-0.5% (with 4% engine governing)</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Build Up Voltage</td>
+												<td>
+													<ul>
+														<li>5Vac 25Hz residual volts at power input terminal</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Soft Start Ramp Time</td>
+												<td>
+													<ul>
+														<li>3 seconds +/-10%</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">EMI Suppression</td>
+												<td>
+													<ul>
+														<li>Internal electromagnetic interference filtering</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Static Power Dissipation	</td>
+												<td>
+													<ul>
+														<li>Max. 8 watts</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Under Frequency Protection<br>(Factory Presets)</td>
+												<td>
+													<ul>
+														<li>50 Hz system presets knee point at 45 Hz</li>
+														<li>60 Hz system presets knee point at 55 Hz</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Over Excitation Protection</td>
+												<td>
+													<ul>
+														<li>78 Vdc +/-6% @ 220 Vac Time delay 5 seconds</li>
+														<li>Function can be turn off</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Voltage Thermal Drift</td>
+												<td>
+													<ul>
+														<li>Less than 3% at temperature range -40 to +70 °C</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Under-Frequency Knee Point Thermal Drift</td>
+												<td>
+													<ul>
+														<li>Less than +/-0.1 Hz at -40 to +70 °C</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<div class="accordion-content" style="display: none;">
-									<ul>
-										<li>Compact size, robust and high reliability</li>
-										<li>Innovative heat sink significantly increases cooling efficiency</li>
-										<li>220/380/440/480 Vac selectable input</li>
-										<li>Soft start voltage ramping</li>
-										<li>Over excitation protection</li>
-										<li>Digital low frequency protection circuit, prevents thermal drift</li>
-										<li>EMI suppression</li>
-										<li>Automatic shut off output when voltage sensing is lost</li>
-										<li>Built-in high capacity fuse</li>
-										<li>Use with KUTAI <a href="ep200.html">EP200</a> Paralleling Module for parallel operation</li>
-									</ul>
+								<div class="col-md-12 mt-3">
+									<table class="table table-sm css-table">
+										<thead>
+											<tr>
+												<th scope="col" colspan="2"><h4>Environment</h4></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td scope="row">Operating Temperature</td>
+												<td>
+													<ul>
+														<li>-40 to +60 °C</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Storage Temperature</td>
+												<td>
+													<ul>
+														<li>-40 to +85 °C</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Relative Humidity</td>
+												<td>
+													<ul>
+														<li>Max. 95%</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Vibration</td>
+												<td>
+													<ul>
+														<li>5.0 Gs @ 60 Hz</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-
-								<div class="accordion-header page-section">
-									<div class="accordion-icon">
-										<i class="accordion-closed icon-line-plus"></i>
-										<i class="accordion-open icon-line-minus"></i>
-									</div>
-									<div class="accordion-title">Specifications</div>
+								<div class="col-md-12 mt-3">
+									<img src="images/products/advr-054/dimension-w.png" class="rounded d-block img-fluid">
+									<table class="table table-sm css-table">
+										<thead>
+											<tr>
+												<th scope="col" colspan="2"><h4>Physical Specifications</h4></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td scope="row">Dimension</td>
+												<td>
+													<ul>
+														<li>121.0 (L) x 81.0 (W) x 44.5 (H) mm</li>
+														<li>4.76 (L) x 3.19 (W) x 1.75 (H) inch</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td scope="row">Weight</td>
+												<td>
+													<ul>
+														<li>270 g +/-2%</li>
+														<li>0.6 lb +/-2%</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<div class="accordion-content" style="display: none;">
-									<div class="row">
-										<div class="col-lg-12 mt-3">
-											<table class="table css-table">
-												<thead>
-													<tr>
-														<th scope="col" colspan="2"><h4>Specifications</h4></th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td scope="row">Sensing Input<br>(Average Reading)</td>
-														<td class="text-black-50">
-															<ul>
-																<li>Voltage 170 to 260 Vac @ 220 Vac 1 phase 2 wire</li>
-																<li>Voltage 340 to 520 Vac @ 440 Vac 1 phase 2 wire 220/440 Vac (DIP switch setting)</li>
-																<li>Frequency 320 to 420 Hz</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Power Input</td>
-														<td class="text-black-50">
-															<ul>
-																<li>Voltage 100 to 300 Vac 1 phase 2 wire</li>
-																<li>Frequency 250 to 420 Hz</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Excitation Output</td>
-														<td class="text-black-50">
-															<ul>
-																<li>220 Vac 1 phase continuous 63 Vdc 5A Max. 90 Vdc 7A for 10 seconds</li>
-																<li>Resistance Min. 15 ohms Max. 100 ohms</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">External Voltage Adjustment</td>
-														<td class="text-black-50">
-															<ul>
-																<li>Max +/-3.5% @ 1K ohm 1 watt potentiometer</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Voltage Regulation</td>
-														<td class="text-black-50">
-															<ul>
-																<li>Less than +/-0.5% (with 4% engine governing)</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Build Up Voltage</td>
-														<td class="text-black-50">
-															<ul>
-																<li>5Vac 25Hz residual volts at power input terminal</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Soft Start Ramp Time</td>
-														<td class="text-black-50">
-															<ul>
-																<li>3 seconds +/-10%</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">EMI Suppression</td>
-														<td class="text-black-50">
-															<ul>
-																<li>Internal electromagnetic interference filtering</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Static Power Dissipation	</td>
-														<td class="text-black-50">
-															<ul>
-																<li>Max. 8 watts</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Under Frequency Protection<br>(Factory Presets)</td>
-														<td class="text-black-50">
-															<ul>
-																<li>50 Hz system presets knee point at 45 Hz</li>
-																<li>60 Hz system presets knee point at 55 Hz</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Over Excitation Protection</td>
-														<td class="text-black-50">
-															<ul>
-																<li>78 Vdc +/-6% @ 220 Vac Time delay 5 seconds</li>
-																<li>Function can be turn off</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Voltage Thermal Drift</td>
-														<td class="text-black-50">
-															<ul>
-																<li>Less than 3% at temperature range -40 to +70 °C</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Under-Frequency Knee Point Thermal Drift</td>
-														<td class="text-black-50">
-															<ul>
-																<li>Less than +/-0.1 Hz at -40 to +70 °C</li>
-															</ul>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div class="col-md-12 mt-3">
-											<table class="table table-sm css-table">
-												<thead>
-													<tr>
-														<th scope="col" colspan="2"><h4>Environment</h4></th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td scope="row">Operating Temperature</td>
-														<td class="text-black-50">
-															<ul>
-																<li>-40 to +60 °C</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Storage Temperature</td>
-														<td class="text-black-50">
-															<ul>
-																<li>-40 to +85 °C</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Relative Humidity</td>
-														<td class="text-black-50">
-															<ul>
-																<li>Max. 95%</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Vibration</td>
-														<td class="text-black-50">
-															<ul>
-																<li>5.0 Gs @ 60 Hz</li>
-															</ul>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div class="col-md-12 mt-3">
-											<img src="images/products/advr-054/dimension.png" class="rounded  d-block img-fluid">
-											<table class="table table-sm css-table">
-												<thead>
-													<tr>
-														<th scope="col" colspan="2"><h4>Physical Specifications</h4></th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td scope="row">Dimension</td>
-														<td class="text-black-50">
-															<ul>
-																<li>121.0 (L) x 81.0 (W) x 44.5 (H) mm</li>
-																<li>4.76 (L) x 3.19 (W) x 1.75 (H) inch</li>
-															</ul>
-														</td>
-													</tr>
-													<tr>
-														<td scope="row">Weight</td>
-														<td class="text-black-50">
-															<ul>
-																<li>270 g +/-2%</li>
-																<li>0.6 lb +/-2%</li>
-															</ul>
-														</td>
-													</tr>
-												</tbody>
-											</table>
+							</div>
+						</div>
+						<div class="accordion-header page-section">
+							<div class="accordion-icon">
+								<i class="accordion-closed icon-line-plus"></i>
+								<i class="accordion-open icon-line-minus"></i>
+							</div>
+							<div class="accordion-title">Accessories</div>
+						</div>
+						<div class="accordion-content" style="display: none;">
+							<div class="row p-2">
+								<div class="col-md-4 col-6">
+									<div class="card accessories">
+										<img class="card-img-top" src="https://www.kutai.com.tw/images2/eb500/thumbnail.png">
+										<div class="card-body">
+											<div class="card-text text-center">EB500</div>
 										</div>
 									</div>
 								</div>
-								<div class="accordion-header page-section">
-									<div class="accordion-icon">
-										<i class="accordion-closed icon-line-plus"></i>
-										<i class="accordion-open icon-line-minus"></i>
+								<div class="col-md-4 col-6">
+									<div class="card accessories">
+										<img class="card-img-top" src="https://www.kutai.com.tw/images2/eb-9v/thumbnail.png">
+										<div class="card-body">
+											<div class="card-text text-center">EB-9V</div>
+										</div>
 									</div>
-									<div class="accordion-title">Accessories</div>
 								</div>
-								<div class="accordion-content" style="display: none;">
-									<div class="row p-2">
-										<div class="col-md-4">
-											<div class="card">
-												<img class="card-img-top w-100 h-auto" style="background-color: #e4e7ea;" src="https://www.kutai.com.tw/images2/eb500/thumbnail.png">
-												<div class="card-body">
-													<div class="card-text text-center" style="color: #777; font-size: 24px;">EB500</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4">
-											<div class="card">
-												<img class="card-img-top w-100 h-auto" style="background-color: #e4e7ea;" src="https://www.kutai.com.tw/images2/eb-9v/thumbnail.png">
-												<div class="card-body">
-													<div class="card-text text-center" style="color: #777; font-size: 24px;">EB-9V</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4">
-											<div class="card">
-												<img class="card-img-top w-100 h-auto" style="background-color: #e4e7ea;" src="https://www.kutai.com.tw/images2/ep200/thumbnail.png">
-												<div class="card-body">
-													<div class="card-text text-center" style="color: #777; font-size: 24px;">EP200</div>
-												</div>
-											</div>
+								<div class="col-md-4 col-6">
+									<div class="card accessories">
+										<img class="card-img-top w-100 h-auto"src="https://www.kutai.com.tw/images2/ep200/thumbnail.png">
+										<div class="card-body">
+											<div class="card-text text-center">EP200</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- <div class="col-md-4">
-
-							<div class="card shadow-sm mt-3" style="border-radius: 0.75rem;">
-								<div class="card-body p-3" style="border-radius: 0.75rem;">
-									<a href="#" class="button button-rounded m-0 button-large btn-block side-panel-trigger center nott">Product Inquiry</a>
-								</div>
-							</div>
-						</div> -->
 					</div>
 
 						
@@ -943,29 +941,50 @@
 					<div class="section-downloads page-section clearix dark mt-5">
 						<h2 class="section-title underline mb-5">Downloads</h2>
 						<div class="row">
-							<div class="col-md-4 text-center">
+							<div class="col-6 col-md-4 text-center">
 								<div class="heading-block border-0 mb-2">
 									<div class="title">Brochure</div>
 									<small class="subtitle text-muted">(PDF 204.92 KB)</small>
 								</div>
-								<div class="my-2"><i class="icon-line2-cloud-download inline-block" style="font-size: 60px"></i></div>
-								<a href="https://www.kutai.com.tw/download/advr-054/advr-054-brochure-en.pdf" class="card-button-sm m-0">Download</a>
+								<div class="my-1"><i class="icon-line2-cloud-download inline-block" style="font-size: 60px"></i></div>
+								<a href="https://www.kutai.com.tw/download/advr-054/advr-054-brochure-en.pdf">
+									<div class="card-button-sm my-2">Download									
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+											<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+											<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+										</svg>
+									</div>
+								</a>
 							</div>
-							<div class="col-md-4 text-center">
+							<div class="col-6 col-md-4 text-center">
 								<div class="heading-block border-0 mb-2">
 									<div class="title">User Manual</div>
 									<small class="subtitle text-muted">(PDF 204.92 KB)</small>
 								</div>
-								<div class="my-2"><i class="icon-file3 inline-block" style="font-size: 60px"></i></div>
-								<a href="https://www.kutai.com.tw/download/advr-054/advr-054-manual-en.pdf" class="card-button-sm m-0">Download</a>
+								<div class="my-1"><i class="icon-file3 inline-block" style="font-size: 60px"></i></div>
+								<a href="https://www.kutai.com.tw/download/advr-054/advr-054-manual-en.pdf">
+									<div class="card-button-sm my-2">Download									
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+											<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+											<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+										</svg>
+									</div>
+								</a>
 							</div>
-							<div class="col-md-4 text-center">
+							<div class="col-6 col-md-4 text-center">
 								<div class="heading-block border-0 mb-2">
 									<div class="title">Comparison Table</div>
 									<small class="subtitle text-muted">(PDF 24.88 MB)</small>
 								</div>
-								<div class="my-2"><i class="icon-file-alt inline-block" style="font-size: 60px"></i></div>
-								<a href="https://www.kutai.com.tw/download/advr-054/ea05a-advr053-advr054-comparison-table-en.pdf" class="card-button-sm m-0">Download</a>
+								<div class="my-1"><i class="icon-file-alt inline-block" style="font-size: 60px"></i></div>
+								<a href="https://www.kutai.com.tw/download/advr-054/ea05a-advr053-advr054-comparison-table-en.pdf">
+									<div class="card-button-sm my-2">Download									
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+											<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+											<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+										</svg>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>

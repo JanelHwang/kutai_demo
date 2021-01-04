@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  letter-spacing: 1px;
+}
+
 .product-header {
   width: 100%;
   min-height: 100vh;
@@ -27,20 +31,23 @@
 }
 
 .product-header .title {
-  font-size: calc(56px + (58 - 56) * ((100vw - 360px) / (1440 - 360)));
+  font-size: calc(30px + (48 - 30) * ((100vw - 360px) / (1440 - 360)));
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 500;
+  margin-top: -1.8rem;
 }
 
 .card-button {
   display: inline-block;
   text-align: center;
   min-width: 180px;
-  padding: 8px 16px 8px 24px;
+  line-height: 1.8;
+  padding: 0 8px 2px 16px;
   font-size: calc(24px + (28 - 24) * ((100vw - 360px) / (1440 - 360)));
   font-weight: 300;
-  border-radius: 15px;
+  border-radius: 8px;
   letter-spacing: 1px;
+  color: #FFF;
   cursor: pointer;
   background-color: #B8292D;
 }
@@ -51,16 +58,10 @@
   transition: all .2s ease-in;
 }
 
-@media (max-width: 1200px) {
-  .card-button {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .card-button {
-    font-size: 16px;
-  }
+.card-button-sm {
+  font-size: calc(16px + (20 - 16) * ((100vw - 360px) / (1440 - 360)));
+  padding: 2px 10px 2px 16px;
+  line-height: 1.8;
 }
 
 /* Slider Area */
@@ -162,13 +163,13 @@
 
 /* accordion 、 CSS table */
 .accordion-title {
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   font-size: calc(28px + (32 - 28) * ((100vw - 360px) / (1440 - 360)));
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .accordion-active > .accordion-title, .accordion-active .accordion-icon {
-  font-weight: 600;
+  font-weight: 500;
   color: #B8292D;
 }
 
@@ -198,7 +199,7 @@
 }
 
 .toggle-content, .accordion-content {
-  padding-left: 1.5rem;
+  padding-left: 4.2rem;
 }
 
 .accordion-content {
@@ -234,6 +235,14 @@
   padding: 0;
 }
 
+.css-table td:nth-child(1) {
+  color: #e8eaed;
+}
+
+.css-table td:nth-child(2) {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
 .css-table tr > td {
   margin: 0;
   padding: 0 0.75rem;
@@ -260,14 +269,6 @@
   padding: 0 !important;
   margin: calc((186px - 123px) /4) 0;
   list-style: none;
-}
-
-.css-table tbody > tr {
-  background-color: #c2c2c2;
-}
-
-.css-table tr:nth-child(even) {
-  background-color: #eaeaea;
 }
 
 .css-table td > ul > li {
@@ -323,14 +324,6 @@
   padding: 0 !important;
   margin: calc((186px - 123px) /4) 0;
   list-style: none;
-}
-
-.css-table tbody > tr {
-  background-color: #c2c2c2;
-}
-
-.css-table tr:nth-child(even) {
-  background-color: #eaeaea;
 }
 
 .css-table td > ul > li {
@@ -418,14 +411,6 @@
   padding: 0 !important;
   margin: calc((186px - 123px) /4) 0;
   list-style: none;
-}
-
-.css-table tbody > tr {
-  background-color: #c2c2c2;
-}
-
-.css-table tr:nth-child(even) {
-  background-color: #eaeaea;
 }
 
 .css-table td > ul > li {
@@ -611,25 +596,22 @@
 
 @media (max-width: 767px) {
   .accordion-content {
-    padding-left: 15px;
+    padding-left: 3.5rem;
   }
   .accordion-content [class*=col-] {
     padding-left: 0;
   }
   /*css-table default ->產品規格使用 */
   .css-table {
-    border: 1px solid #eee;
     border-collapse: collapse;
     min-width: 280px;
     overflow-x: auto;
   }
   .css-table th {
-    border: 1px solid #eee;
     padding: 2px 4px;
     text-align: center;
   }
   td {
-    border: 1px solid #eee;
     padding: 2px 4px;
     text-align: center;
   }
@@ -646,7 +628,7 @@
     content: ":";
   }
   .css-table tbody > tr {
-    border: 1px solid #eee;
+    border-bottom: 1px solid #eee;
   }
   .css-table td {
     display: block;
@@ -712,6 +694,17 @@
   }
 }
 
+/*accessories*/
+.accessories {
+  background-color: rgba(28, 28, 28, 0.85);
+  font-size: calc(20px + (24 - 20) * ((100vw - 360px) / (1440 - 360)));
+}
+
+.accessories .card-text {
+  color: #FFF;
+  padding: 0.5rem 0 1rem 0;
+}
+
 /*download*/
 .section-downloads .title {
   font-size: calc(26px + (28 - 26) * ((100vw - 360px) / (1440 - 360)));
@@ -725,5 +718,22 @@
   .section-downloads .col-md-4:nth-child(3) {
     margin-bottom: 0;
   }
+}
+
+/*video*/
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=products.css.map */

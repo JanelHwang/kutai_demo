@@ -12,10 +12,8 @@
 	
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/app.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/dark.css" type="text/css" />
 
-	<link rel="stylesheet" href="assets/css/index.css" type="text/css" />
-	<link rel="stylesheet" href="assets/css/kutai.css" type="text/css" />
 	
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
@@ -23,7 +21,8 @@
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
-
+	<link rel="stylesheet" href="assets/css/kutai.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/index.css" type="text/css" />
 	<!-- mega menu reDesign -->
 	<link rel="stylesheet" href="css/mega-menu.css" type="text/css" />
 
@@ -47,6 +46,10 @@
 	<title>Home - Parallax | Canvas</title>
 
 	<style>
+		/*Hero slider*/
+		.popup-youtube:hover{
+			color:#FA373D;
+		}
 		/* Revolution Slider */
 		.ares .tp-tab { border: 1px solid #eee; }
 		.ares .tp-tab-content { margin-top: -4px; }
@@ -95,7 +98,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header sticky-header sticky-header-shrink dark" data-mobile-sticky="true" >
+		<header id="header" class="full-header sticky-header header-size-sm dark" data-mobile-sticky="true" data-sticky-shrink="false">
 			<div id="header-wrap">
 				<div class="container-fluid">
 					<div class="header-row top-search-parent">
@@ -103,12 +106,12 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="index.html" class="standard-logo" style="height: 50px;"><img src="images/logo-dark.svg" alt="Canvas Logo"></a>
-							<a href="index.html" class="retina-logo" style="height: 30px;"><img src="images/logo-dark.svg" alt="Canvas Logo"></a>
+							<a href="index.html" class="standard-logo"><img src="images/logo-dark.svg" alt="Canvas Logo" style="height: 39px;"></a>
+							<a href="index.html" class="retina-logo"><img src="images/logo-dark.svg" alt="Canvas Logo" style="height: 30px;"></a>
 						</div><!-- #logo end -->
 
-						<div class="header-misc ml-0 my-2">
-							<a href="#" class="btn d-none d-md-none d-lg-block"><i class="icon-user1"></i></a>
+						<div class="header-misc ml-auto my-2">
+							<a href="#" class="dark btn d-none d-md-none d-lg-block"><i class="icon-user4"></i></a>
 
 							<div class="dropdown">
 								<a class="btn" data-toggle="dropdown"><i class="icon-world"></i></a>
@@ -123,7 +126,7 @@
 							<!-- Top Search
 							============================================= -->
 							<div id="top-search" class="header-misc-icon">
-								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
+								<a href="#" id="top-search-trigger" class="btn"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
 							</div><!-- #top-search end -->
 
 							<div id="primary-menu-trigger">
@@ -133,7 +136,7 @@
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu with-arrows on-click mr-lg-0 ml-lg-auto navbar-no-bg">
+						<nav class="primary-menu with-arrows on-click navbar-no-bg">
 							<ul class="menu-container">
 								<li class="menu-item sub-menu">
 									<a class="menu-link" href="#"><div>About</div></a>
@@ -150,7 +153,7 @@
 											<div class="row">
 												<!-- Mega Menu Nav Link
 												============================================= -->
-												<ul class="sub-menu-container mega-menu-column col-lg-3 p-lg-0">
+												<ul class="sub-menu-container mega-menu-column col-lg-4 p-lg-0">
 													<li class="menu-item">
 														<div class="widget">
 															<div class="list-group list-group-flush" id="side-tabs" role="tablist" aria-orientation="vertical">
@@ -185,7 +188,7 @@
 
 												<!-- Mega Menu Nav Content
 												============================================= -->
-												<ul class="sub-menu-container mega-menu-column col-lg-3 p-lg-0"  >
+												<ul class="sub-menu-container mega-menu-column col-lg-3 p-lg-0">
 													<li class="menu-item">
 														<div class="widget">
 															<!-- generator-automatic-voltage-regulator / types -->
@@ -310,13 +313,13 @@
 														</div>
 													</li>
 												</ul>
-												<ul class="sub-menu-container mega-menu-column col-lg-3 p-lg-0">
+												<ul class="sub-menu-container mega-menu-column col-lg-5 p-lg-0">
 													<li class="menu-item">
 														<div class="widget">
 															<div class="tab-content">
 																<div class="tab-pane pt-4 pt-md-0 show" id="kutai-series-avr-50-60Hz" role="tabpanel" aria-labelledby="kutai-series-avr-50-60Hz" aria-selected="false">
 																	<ul class="product-item list-unstyled">
-																		<a  href="detail.html"><li>ADVR-054</li></a>
+																		<a  href="demo-car-single.html"><li>ADVR-054</li></a>
 																		<a href="#"><li>ADVR-073</li></a>
 																		<a href="#"><li>ADVR-083</li></a>
 																		<a href="#"><li>ADVR-16</li></a>
@@ -557,7 +560,7 @@
 								<li class="menu-item"><a class="menu-link" href="#"><div>Downloads</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#"><div>Knowledge</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#"><div>Test Report</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#"><div>Contact Us</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Support</div></a></li>
 								<li class="menu-item d-lg-none"><a class="menu-link" href="#"><div><i class="icon-user1 pr-2"></i>Login</div></a></li>
 							</ul>
 						</nav><!-- #primary-menu end -->
@@ -587,12 +590,12 @@
                                 <!-- LAYER NR. 2 -->
                                 <div class="tp-caption  "
                                      id="slide-243-layer-1"
-                                     data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']"
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['50','-350','-300','-250']"
-                                    data-fontsize="['100','80','50','48']"
-                                    data-lineheight="['75','80','70','60']"
-                                    data-letterspacing="['1','5','2','1']"
-                                    data-width="['1200','none','360','260']"
+                                     data-x="['left','center','center','center']" data-hoffset="['50','0','0','0']"
+                                     data-y="['middle','middle','middle','middle']" data-voffset="['45','-350','-300','-250']"
+                                    data-fontsize="['80','70','50','48']"
+                                    data-lineheight="['80','70','50','48']"
+                                    data-letterspacing="['0','5','2','1']"
+                                    data-width="['600','none','360','260']"
                                     data-height="none"
                                     data-whitespace="['normal','nowrap','normal','normal']"
     
@@ -606,18 +609,18 @@
                                     data-paddingbottom="[0,0,0,0]"
                                     data-paddingleft="[0,0,0,0]"
     
-                                    style="z-index: 6; min-width: 800px; max-width: 800px; white-space: normal; font-size: 80px; line-height: 80px; font-weight: 600; color: #ffffff; letter-spacing: 2px;font-family:'Open Sans', sans-serif;">BTB TYPE ATS</div>
+                                    style="z-index: 6; min-width: 800px; max-width: 800px; white-space: normal; font-size: 80px; line-height: 80px; font-weight: 500; color: #ffffff; letter-spacing: 2px;font-family:'Open Sans', sans-serif;">BTB TYPE ATS</div>
     
                                 <!-- LAYER NR. 3 -->
                                 <div class="tp-caption"
                                     id="slide-243-layer-2"
-                                    data-x="['left','center','center','center']" data-hoffset="['5','0','0','0']"
-                                    data-y="['middle','middle','middle','middle']" data-voffset="['200','-220','-170','170']"
-                                    data-fontsize="['32','20','0','0']"
-                                    data-lineheight="['48','30','25','22']"
+                                    data-x="['left','center','center','center']" data-hoffset="['58','5','0','0']"
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['152','-220','-170','170']"
+                                    data-fontsize="['24','20','0','0']"
+                                    data-lineheight="['30','30','25','22']"
                                     data-letterspacing="['3','5','2','1']"
-                                    data-color="['rgba(255,255,255,0.75)','rgba(255,255,255,0.65)','rgba(255,255,255,0.65)','rgba(255,255,255,0.65)']"
-                                    data-width="['780','481','360','260']"
+                                    data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(255,255,255)','rgb(255,255,255)']"
+                                    data-width="['580','500','360','260']"
                                     data-height="none"
                                     data-whitespace="normal"
     
@@ -625,19 +628,19 @@
                                     data-responsive_offset="off"
                                     data-responsive="off"
                                     data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-                                    data-textAlign="['left','center','center','center']"
+                                    data-textAlign="['left','left','center','center']"
                                     data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]"
                                     data-paddingbottom="[0,0,0,0]"
                                     data-paddingleft="[0,0,0,0]"
     
-                                    style="z-index: 7; min-width: 640px; max-width: 900px; white-space: normal; letter-spacing: 3px; font-size: 32px; line-height: 48px; font-weight: 300; color: rgba(255,255,255,0.75);font-family:'Open Sans', sans-serif;">Programmable Automatic Transfer Switch 2P/3P/4P 100Amp & 250Amp & 2P 400Amp</div>
+                                    style="z-index: 7; min-width: 640px; max-width: 900px; white-space: normal; letter-spacing: 3px; font-size: 32px; line-height: 48px; font-weight: 300; color: #ffffff;font-family:'Open Sans', sans-serif;">Programmable Automatic Transfer Switch 2P/3P/4P 100Amp & 250Amp & 2P 400Amp</div>
     
                                 <!-- LAYER NR. 4 -->
                                 <div class="tp-caption tp-resizeme rs-parallaxlevel-1" 
                                     id="slide-243-layer-3" 
-									data-x="['right','center','center','center']" data-hoffset="['-100','0','0','0']" 
-									data-y="['top','top','top','bottom']" data-voffset="['300','350','500','20']"
+									data-x="['right','center','center','center']" data-hoffset="['50','0','0','0']" 
+									data-y="['top','top','top','bottom']" data-voffset="['277','350','500','20']"
                                     data-width="none" 
                                     data-height="none" 
                                     data-whitespace="nowrap"
@@ -646,17 +649,17 @@
                                     data-responsive_offset="on" 
                                 
                                     style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform-origin: 50% 50% 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
-                                    <img src="images/parallax/kutai/banner-btb.png" alt="Image" width="1000" height="650" data-ww="['600px','400','400px','380px']" data-hh="['575px','380px','380px','365px']" data-no-retina="" style="width: 1000px; height: 600px; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px;"></div>
+                                    <img src="images/parallax/kutai/banner-btb.png" alt="Image" width="1000" height="650" data-ww="['510px','400','400px','380px']" data-hh="['488px','380px','380px','365px']" data-no-retina="" style="width: 1000px; height: 600px; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px;"></div>
 
                                 <!-- LAYER NR. 5 -->
                                 <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink"
                                     href="http://themes.semicolonweb.com/html/canvas/intro.php#section-niche" target="_blank"
                                     id="slide-243-layer-12"
-                                    data-x="['left','center','center','center']" data-hoffset="['5','-150','0','0']"
-									data-y="['middle','middle','middle','middle']" data-voffset="['320','-110','-180','-150']"
-									data-fontsize="['26','24','20','16']"
-                                    data-lineheight="['60','60','50','50']"
-                                    data-width="['250','280','220','none']"
+                                    data-x="['left','center','center','center']" data-hoffset="['55','-150','0','0']"
+									data-y="['middle','middle','middle','middle']" data-voffset="['225','-110','-180','-150']"
+									data-fontsize="['24','24','20','16']"
+                                    data-lineheight="['44','44','44','44']"
+                                    data-width="['195','195','170','none']"
                                     data-height="none"
                                     data-whitespace="nowrap"
     
@@ -667,21 +670,26 @@
                                     data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
                                     data-textAlign="['center','center','center','inherit']"
                                     data-paddingtop="[0,0,0,0]"
-                                    data-paddingright="[15,50,20,20]"
+                                    data-paddingright="[10,10,10,10]"
                                     data-paddingbottom="[0,0,0,0]"
-                                    data-paddingleft="[15,50,20,20]"
+                                    data-paddingleft="[20,20,20,20]"
     
-                                    style="z-index: 8; min-width: 280px; max-width: 280px; white-space: nowrap; font-size: 26px; line-height: 20px; font-weight: 100; color: rgba(255,255,255,1);font-family:'Open Sans', sans-serif;background-color:#B8292D;;border-radius: 15px;outline:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">Learn more<i class="icon-line-chevrons-right" style="font-size:21px;margin-left:8px;"></i></a>
+									style="z-index: 8; min-width: 160px; max-width: 280px; white-space: nowrap; font-size: 26px; line-height: 20px; font-weight: 100; color: rgba(255,255,255,1);font-family:'Open Sans', sans-serif;background-color:#B8292D;;border-radius: 15px;outline:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none; padding-right: 8px;">Learn more
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+										<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+										<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+                                    </svg>							
+								</a>
     
                                 <!-- LAYER NR. 6 -->
                                 <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink popup-youtube" data-lightbox="iframe"
                                     href="https://www.youtube.com/watch?v=9dFUGMCZDzk" target="_blank"
                                     id="slide-243-layer-13"
-                                    data-x="['left','center','center','center']" data-hoffset="['355','150','0','0']"
-                                    data-y="['middle','middle','middle','middle']" data-voffset="['320','-110','-90','-70']"
-									data-fontsize="['26','24','20','16']"
-									data-lineheight="['60','60','50','50']"
-                                    data-width="['260','280','220','none']"
+                                    data-x="['left','center','center','center']" data-hoffset="['318','150','0','0']"
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['225','-110','-90','-70']"
+									data-fontsize="['24','24','20','16']"
+									data-lineheight="['44','44','44','44']"
+                                    data-width="['220','220','200','none']"
                                     data-height="none"
                                     data-whitespace="nowrap"
     
@@ -692,11 +700,16 @@
                                     data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"x:50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
                                     data-textAlign="['center','center','center','inherit']"
                                     data-paddingtop="[0,0,0,0]"
-                                    data-paddingright="[15,50,20,20]"
+                                    data-paddingright="[20,20,20,20]"
                                     data-paddingbottom="[0,0,0,0]"
-                                    data-paddingleft="[15,50,20,20]"
+                                    data-paddingleft="[20,20,20,20]"
     
-                                    style="z-index: 9; min-width: 280px; max-width: 280px; white-space: nowrap; font-size: 26px; line-height: 40px; font-weight: 300; color: rgba(255,255,255,1);font-family:'Open Sans', sans-serif;background-color:#B8292D;border-radius: 15px;outline:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">Watch the film<i class="icon-line-chevrons-right" style="font-size:21px; margin-left:8px;"></i></a>
+									style="z-index: 9; min-width: 280px; max-width: 280px; white-space: nowrap; font-size: 26px; line-height: 40px; font-weight: 300; color: rgba(255,255,255,1);font-family:'Open Sans', sans-serif;background-color:#B8292D;border-radius: 15px;outline:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none; padding-right: 8px;">Watch the film
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+										<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+										<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+                                    </svg>	
+								</a>
                             </li>
                             <!-- SLIDE  -->
                             <li class="dark" data-index="rs-244" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="include/rs-plugin/demos/assets/images/bottlesbg.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -973,21 +986,28 @@
 		</section> -->
 
 
-		<section id="content">
-			
-			<div class="content-wrap py-0">
 
-                <div class="section parallax min-vh-100 m-0 border-0 d-flex" style="background: #040000 url('images/parallax/kutai/genoncall.png') center center no-repeat; background-size: cover;">
+
+		<section id="content">
+			<div class="content-wrap py-0">
+                <div class="section parallax min-vh-100 m-0 border-0 d-flex" style="background: #040000 url('images/parallax/kutai/genoncall.png') center center no-repeat; background-size: contain;">
 					<div class="genoncall">
-						<div class="row mx-auto">
-							<div class="col-md-12">
+						<div class="row">
+							<div class="col-xl-6 col-md-8 col-sm-10 mx-auto pb-2">
 								<img src="images/parallax/kutai/genoncall-app.png" alt="genoncall-app" class="img-fluid">
 							</div>
-							<div class="genoncall-body">
+							<div class="genoncall-body col-md-12">
 								<div class="subtitle">Anywhere & Anytime</div>
 								<div class="title">GenOnCall Remote</div>
 								<div class="content">Monitor & Control your genset from Any Mobile Device</div>
-								<div class="card-button my-4">Learn more<i class="icon-line-chevrons-right pl-2"></i></div>
+								<a href="#">
+									<div class="card-button my-4">Learn more									
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+											<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+											<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+										</svg>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -995,12 +1015,12 @@
 
 				<div class="section parallax min-vh-100 dark m-0 border-0 d-flex" style="background: linear-gradient(to bottom, #040000 30%,#343434 100%);">
 					<div class="container-fluid">
-						<div class="row col-mb-50 mx-auto" style="width:85%;">
+						<div class="row col-mb-50 mx-auto" style="width:90%;">
 							<div class="col-md-12 col-lg-12">
 								<h2 class="section-title underline">PRODUCTS</h2>
 							</div>
 							<div class="col-sm-6 col-lg-4 text-center portfolio-image" data-animate="fadeIn">
-								<div class="card category-card shadow-sm bg-overlay">
+								<div class="card category-card shadow-sm bg-overlay mx-auto">
 									<!-- 圖片 -->
 									<img class="card-img-top animated fadeIn" data-hover-animate="fadeOut" data-hover-animate-out="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;" src="images/1.png" alt="Card image cap">
 									<!-- title 滑入後消失 /滑出後顯示 -->
@@ -1010,7 +1030,12 @@
 										<div class="portfolio-desc p-0 center animated fadeOut" data-hover-animate="fadeIn" data-hover-animate-out="fadeOut" data-hover-speed="350" style="animation-duration: 350ms;">
 											<div class="overlay-title mx-auto">Generator Automatic Voltage Regulators (AVR)</div>
 											<p>Kutai manufactures more than 30 models of automatic voltage regulators as OEM and universal replacement parts for all types of generators- self-excited (Shunt), auxiliary winding, harmonic winding, and PMG. Click Select Your AVR to search our range of automatic voltage regulators by inputting the characteristics or an original model no.</p>
-											<div class="card-button overlay-btn mt-2">View more<i class="icon-line-chevrons-right pl-2"></i></div>
+											<div class="card-button overlay-btn mt-2">View more
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+													<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+													<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+												</svg>
+											</div>
 										</div>
 									</div>
 									<div class="bg-overlay-bg animated fadeOut" data-hover-animate="fadeIn" style="animation-duration: 600ms;"></div>
@@ -1019,7 +1044,7 @@
 							</div>
 
 							<div class="col-sm-6 col-lg-4 text-center" data-animate="fadeIn" data-delay="200">
-								<div class="card category-card shadow-sm bg-overlay">
+								<div class="card category-card shadow-sm bg-overlay mx-auto">
 									<!-- 圖片 -->
 									<img class="card-img-top animated fadeIn" data-hover-animate="fadeOut" data-hover-animate-out="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;" src="images/2.png" alt="Card image cap">
 									<!-- title 滑入後消失 /滑出後顯示 -->
@@ -1029,7 +1054,12 @@
 										<div class="portfolio-desc p-0 center animated fadeOut" data-hover-animate="fadeIn" data-hover-animate-out="fadeOut" data-hover-speed="350" style="animation-duration: 350ms;">
 											<div class="overlay-title mx-auto">Automatic Transfer Switches (ATS)</div>
 											<p>Automatic transfer switches transfer to backup generators or other emergency power sources when a problem occurs. Kutai offers a wide-range of Molded Case Circuit Breaker (MCCB) type transfer switches (comply with IEC60947-6-1) and also our newly developed double throw type transfer switches (comply with UL1008).</p>
-											<div class="card-button overlay-btn mt-2">View more<i class="icon-line-chevrons-right pl-2"></i></div>
+											<div class="card-button overlay-btn mt-2">View more
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+													<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+													<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+												</svg>
+											</div>
 										</div>
 									</div>
 									<div class="bg-overlay-bg animated fadeOut" data-hover-animate="fadeIn" style="animation-duration: 600ms;"></div>
@@ -1038,17 +1068,22 @@
 							</div>
 
 							<div class="col-sm-6 col-lg-4 text-center" data-animate="fadeIn" data-delay="400">
-								<div class="card category-card shadow-sm bg-overlay">
+								<div class="card category-card shadow-sm bg-overlay mx-auto">
 									<!-- 圖片 -->
 									<img class="card-img-top animated fadeIn" data-hover-animate="fadeOut" data-hover-animate-out="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;" src="images/3.png" alt="Card image cap">
 									<!-- title 滑入後消失 /滑出後顯示 -->
-									<div class="card-body animated fadeIn" data-hover-animate="fadeOut" data-hover-animate-out="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;">Automatic Battery Chargers</div>
+									<div class="card-body animated fadeIn" data-hover-animate="fadeOut" data-hover-animate-out="fadeIn" data-hover-speed="350" style="animation-duration: 350ms; width:80%;">Automatic Battery Chargers</div>
 									<!-- overlay 效果 -->
 									<div class="bg-overlay-content flex-column animated fadeOut" data-hover-animate="fadeIn" style="animation-duration: 600ms;">
 										<div class="portfolio-desc p-0 center animated fadeOut" data-hover-animate="fadeIn" data-hover-animate-out="fadeOut" data-hover-speed="350" style="animation-duration: 350ms;">
 											<div class="overlay-title mx-auto">Automatic Battery Chargers</div>
 											<p>Kutai automatic battery chargers are designed for Lead Acid, Gel & AGM type batteries and come in both 12V and 24V models with ranges from 3 to 20 Amps. Some models are available for both float charge and equalize charge capabilities.</p>
-											<div class="card-button overlay-btn mt-2">View more<i class="icon-line-chevrons-right pl-2"></i></div>
+											<div class="card-button overlay-btn mt-2">View more
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+													<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+													<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+												</svg>
+											</div>
 										</div>
 									</div>
 									<div class="bg-overlay-bg animated fadeOut" data-hover-animate="fadeIn" style="animation-duration: 600ms;"></div>
@@ -1057,7 +1092,7 @@
 							</div>
 
 							<div class="col-sm-6 col-lg-4 text-center" data-animate="fadeIn">
-								<div class="card category-card shadow-sm bg-overlay">
+								<div class="card category-card shadow-sm bg-overlay mx-auto">
 									<!-- 圖片 -->
 									<img class="card-img-topanimated animated fadeIn" data-hover-animate="fadeOut" data-hover-animate-out="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;" src="images/4.png" alt="Card image cap">
 									<!-- title 滑入後消失 /滑出後顯示 -->
@@ -1067,7 +1102,12 @@
 										<div class="portfolio-desc p-0 center animated fadeOut" data-hover-animate="fadeIn" data-hover-animate-out="fadeOut" data-hover-speed="350" style="animation-duration: 350ms;">
 											<div class="overlay-title mx-auto">Genset Controller and Automatic Mains Failure</div>
 											<p>Kutai generator control units are high-reliability OEM and universal and aftermarket replacements for all different types of generators and engine types. The Kutai auto mains failure module is a control and protection module for the genset with full generator control unit capability and also a monitoring controller for the ATS.</p>
-											<div class="card-button overlay-btn mt-2">View more<i class="icon-line-chevrons-right pl-2"></i></div>
+											<div class="card-button overlay-btn mt-2">View more
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+													<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+													<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+												</svg>
+											</div>
 										</div>
 									</div>
 									<div class="bg-overlay-bg animated fadeOut" data-hover-animate="fadeIn" style="animation-duration: 600ms;"></div>
@@ -1076,7 +1116,7 @@
 							</div>
 
 							<div class="col-sm-6 col-lg-4 text-center" data-animate="fadeIn" data-delay="200">
-								<div class="card category-card shadow-sm bg-overlay">
+								<div class="card category-card shadow-sm bg-overlay mx-auto">
 									<!-- 圖片 -->
 									<img class="card-img-top animated fadeIn" data-hover-animate="fadeOut" data-hover-animate-out="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;" src="images/5.png" alt="Card image cap">
 									<!-- title 滑入後消失 /滑出後顯示 -->
@@ -1086,7 +1126,12 @@
 										<div class="portfolio-desc p-0 center animated fadeOut" data-hover-animate="fadeIn" data-hover-animate-out="fadeOut" data-hover-speed="350" style="animation-duration: 350ms;">
 											<div class="overlay-title mx-auto">Remote Monitoring, Control and Annunciator System</div>
 											<p>Kutai KCU Modules are compact and all uniform size. Choose from USB, RS-485, Ethernet, WI-FI, or GSM 3G connection methods that suit your needs and start monitoring and control your gensets via PC, tablets, or smartphones.</p>
-											<div class="card-button overlay-btn mt-2">View more<i class="icon-line-chevrons-right pl-2"></i></div>
+											<div class="card-button overlay-btn mt-2">View more
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+													<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+													<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+												</svg>
+											</div>
 										</div>
 									</div>
 									<div class="bg-overlay-bg animated fadeOut" data-hover-animate="fadeIn" style="animation-duration: 600ms;"></div>
@@ -1095,7 +1140,7 @@
 							</div>
 
 							<div class="col-sm-6 col-lg-4 text-center" data-animate="fadeIn" data-delay="400">
-								<div class="card category-card shadow-sm bg-overlay">
+								<div class="card category-card shadow-sm bg-overlay mx-auto">
 									<!-- 圖片 -->
 									<img class="card-img-top animated fadeIn" data-hover-animate="fadeOut" data-hover-animate-out="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;" src="images/6.png" alt="Card image cap">
 									<!-- title 滑入後消失 /滑出後顯示 -->
@@ -1105,7 +1150,12 @@
 										<div class="portfolio-desc p-0 center animated fadeOut" data-hover-animate="fadeIn" data-hover-animate-out="fadeOut" data-hover-speed="350" style="animation-duration: 350ms;">
 											<div class="overlay-title mx-auto">Electronic Governor Controllers</div>
 											<p>Kutai’s electronic governor controller is compatible with all analog governors/speed controllers from Cummins, Barber Colman, Woodward and GAC. The Kutai governor controller works with all types of hydraulically actuated governors, PT pump type (Cummins), both built-in and externally mounted.</p>
-											<div class="card-button overlay-btn mt-2">View more<i class="icon-line-chevrons-right pl-2"></i></div>
+											<div class="card-button overlay-btn mt-2">View more
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+													<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+													<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+												</svg>
+											</div>
 										</div>
 									</div>
 									<div class="bg-overlay-bg animated fadeOut" data-hover-animate="fadeIn" style="animation-duration: 600ms;"></div>
@@ -1114,7 +1164,12 @@
 							</div>
 						</div>
 						<div class="d-flex justify-content-center align-items-center my-5">
-							<div class="card-button">All products<i class="icon-line-chevrons-right pl-2"></i></div>
+							<div class="card-button">View All products												
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+									<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+									<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+								</svg>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1122,12 +1177,12 @@
 				<div class="section parallax min-vh-100 dark m-0 border-0 d-flex" style="background: #343434 url('images/bg-1.png') center center no-repeat; background-size: cover;" data-bottom-top="background-position: 0px 200px;" data-top-bottom="background-position: 0px -200px;">
 					<div class="vertical-middle">
 						<div class="container-fluid">
-							<div class="row col-mb-50 mx-auto" style="width:85%;">
+							<div class="row col-mb-50 mx-auto" style="width:90%;">
 								<div class="col-md-12 col-lg-12">
 									<h2 class="section-title underline">NEWS</h2>
 								</div>
 								<div class="col-sm-12 col-md-8 col-lg-4 text-center portfolio-image mx-auto">
-									<div class="news-card shadow-sm new-pd">
+									<div class="news-card shadow-sm new-pd mx-auto">
 										<div class="card-head">
 											<div class="card-title">CTM-25</div>
 											<div class="card-subtitle">MAR 6th 2020</div>
@@ -1138,7 +1193,7 @@
 								</div>
 	
 								<div class="col-sm-12 col-md-8 col-lg-4 text-center portfolio-image mx-auto">
-									<div class="news-card shadow-sm dc-pd">
+									<div class="news-card shadow-sm dc-pd mx-auto">
 										<div class="card-head">
 											<div class="card-title">CH1112</div>
 											<div class="card-subtitle">JUN 10th 2020</div>
@@ -1149,7 +1204,7 @@
 								</div>
 	
 								<div class="col-sm-12 col-md-8 col-lg-4 text-center portfolio-image mx-auto">
-									<div class="news-card shadow-sm dc-pd">
+									<div class="news-card shadow-sm dc-pd mx-auto">
 										<div class="card-head">
 											<div class="card-title">ATS-34</div>
 											<div class="card-subtitle">AUG 20th 2020</div>
@@ -1160,7 +1215,12 @@
 								</div>
 							</div>
 							<div class="d-flex justify-content-center align-items-center my-5">
-								<div class="card-button">More news<i class="icon-line-chevrons-right pl-2"></i></div>
+								<div class="card-button">More news
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 22 22">
+										<path class="cls-1" d="M.24.57a.57.57,0,0,1,.82,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7a.57.57,0,0,1-.82,0,.59.59,0,0,1,0-.83L6.84,8,.24,1.4a.59.59,0,0,1,0-.83Z" transform="translate(-0.06 -0.4)"/>
+										<path class="cls-1" d="M8,.57a.59.59,0,0,1,.83,0h0l7,7a.57.57,0,0,1,0,.82h0l-7,7A.59.59,0,1,1,8,14.6L14.59,8,8,1.4A.59.59,0,0,1,8,.57Z" transform="translate(-0.06 -0.4)"/>
+									</svg>
+								</div>
 							</div>
 						</div>
 					</div>
