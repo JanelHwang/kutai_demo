@@ -79,6 +79,7 @@
 @media (max-width: 480px) {
   .genoncall .title {
     font-size: 48px;
+    line-height: 1.1;
   }
   .genoncall .subtitle {
     font-size: 20px;
@@ -86,7 +87,7 @@
   }
   .genoncall .content {
     font-size: 16px;
-    margin-top: 0px;
+    margin-top: 10px;
   }
   .genoncall .btn {
     font-size: 16px;
