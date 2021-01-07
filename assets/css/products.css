@@ -31,8 +31,7 @@ body {
 }
 
 .product-header .title {
-  font-size: calc(30px + (48 - 30) * ((100vw - 360px) / (1440 - 360)));
-  letter-spacing: 2px;
+  font-size: calc(50px + (68 - 50) * ((100vw - 360px) / (1440 - 360)));
   font-weight: 500;
   margin-top: -1.8rem;
 }
@@ -45,7 +44,7 @@ body {
   padding: 0 8px 2px 16px;
   font-size: calc(24px + (28 - 24) * ((100vw - 360px) / (1440 - 360)));
   font-weight: 300;
-  border-radius: 8px;
+  border-radius: 12px;
   letter-spacing: 1px;
   color: #FFF;
   cursor: pointer;
@@ -706,9 +705,19 @@ body {
 }
 
 /*download*/
+.section-downloads .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .section-downloads .title {
-  font-size: calc(26px + (28 - 26) * ((100vw - 360px) / (1440 - 360)));
+  font-size: calc(28px + (32 - 28) * ((100vw - 360px) / (1440 - 360)));
   letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
