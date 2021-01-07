@@ -56,6 +56,12 @@
           box-shadow: none;
 }
 
+.header-misc .btn:hover {
+  color: #777;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 .section-title {
   text-align: center;
   font-weight: 500;

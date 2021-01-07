@@ -733,6 +733,11 @@ body {
 }
 
 /*video*/
+.prodcut-video {
+  width: 100%;
+  height: auto;
+}
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
