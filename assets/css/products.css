@@ -31,7 +31,7 @@ body {
 }
 
 .product-header .title {
-  font-size: calc(50px + (68 - 50) * ((100vw - 360px) / (1440 - 360)));
+  font-size: calc(50px + (65 - 50) * ((100vw - 360px) / (1440 - 360)));
   font-weight: 500;
   margin-top: -1.8rem;
 }
