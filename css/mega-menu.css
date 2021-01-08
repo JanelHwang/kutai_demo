@@ -7,7 +7,7 @@
 .mega-menu .list-group-item {
     color: #444;
     min-width: 250px;
-    font-size: 0.8em;
+    font-size: 0.85em;
 }
 
 .mega-menu .list-group-item > i{
@@ -68,7 +68,7 @@
     color: #fff;
 }
 .product-item {
-    max-height: 394px;
+    max-height: 524px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -110,17 +110,17 @@ icon-line-cross:hover{
 }
 
 
-#header.sticky-header.dark .btn > i.icon-world{
+#header.sticky-header.dark .btn i.icon-world{
     color: #fff;
 }
-#header.sticky-header.dark .btn > i.icon-world:hover{
+#header.sticky-header.dark .btn i.icon-world:hover{
     color: #777;
 }
 
-#header.sticky-header.dark .btn > i.icon-user1{
+#header.sticky-header.dark i.icon-user4{
     color: #fff;
 }
 
-#header.sticky-header.dark .btn > i.icon-user1:hover{
+#header.sticky-header.dark i.icon-user4:hover{
     color: #777;
 }

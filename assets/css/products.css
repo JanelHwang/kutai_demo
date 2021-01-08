@@ -740,7 +740,7 @@ body {
   padding-bottom: 56.25%;
 }
 
-.video-container iframe {
+.video-container iframe, .video-container embed {
   position: absolute;
   top: 0;
   left: 0;
