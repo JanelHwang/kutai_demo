@@ -22,7 +22,7 @@
 
 .genoncall img {
   display: block;
-  margin: 100px auto 0 auto;
+  margin: 90px auto 0 auto;
   z-index: 0;
 }
 
@@ -34,33 +34,30 @@
 }
 
 .genoncall .subtitle {
-  font-size: calc(24px + (30 - 24) * ((100vw - 360px) / (1440 - 360)));
-  letter-spacing: 5px;
+  font-size: calc(24px + (28 - 24) * ((100vw - 360px) / (1440 - 360)));
+  letter-spacing: 3px;
   font-weight: 300;
   margin-bottom: -30px;
   color: #FFF;
 }
 
 .genoncall .content {
-  font-size: calc(20px + (22 - 20) * ((100vw - 360px) / (1440 - 360)));
+  font-size: calc(18px + (20 - 18) * ((100vw - 360px) / (1440 - 360)));
   color: #9f9e9f;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-weight: 400;
-  margin-top: -15px;
+  margin-top: -30px;
 }
 
 @media (max-width: 850px) {
-  .genoncall .subtitle {
-    margin-bottom: -15px;
-  }
   .genoncall .content {
-    margin-top: 0px;
+    margin-top: -20px;
   }
   .genoncall img {
     margin-top: 80px;
   }
   .genoncall .genoncall-body {
-    margin-top: -50px;
+    margin-top: -40px;
   }
 }
 
@@ -100,7 +97,7 @@
 .genoncall-body {
   z-index: 2;
   position: relative;
-  margin-top: -100px;
+  margin-top: -90px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -151,6 +148,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1em;
+  line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 2.2px;
   font-weight: 600;
@@ -159,11 +157,16 @@
 }
 
 @media (min-width: 1601px) {
+  .category-card {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
   .category-card img {
-    width: 105%;
+    width: 110%;
   }
   .category-card .card-body {
     font-size: 1.3em;
+    line-height: 1.5;
   }
 }
 
