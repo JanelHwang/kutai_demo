@@ -306,11 +306,11 @@
   width: 100%;
   height: 100%;
   display: block;
-  background-color: #6c6f72;
+  background-color: #3a3c3e;
 }
 
 .news-card.dc-pd:hover .card-body {
-  background-color: #222323;
+  background-color: #6c6f72;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
