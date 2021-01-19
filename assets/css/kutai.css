@@ -28,6 +28,12 @@
   }
 }
 
+@media (min-width: 992px) {
+  #header.full-header:not(.transparent-header) {
+    border: none !important;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .full-header #logo {
     padding-right: 30px;
